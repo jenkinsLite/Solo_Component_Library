@@ -1,0 +1,32 @@
+div.banner {
+    padding: 1rem;
+    border-radius: 6px;
+    width: 896px;
+    height: fit-content;
+    display: flex;
+    gap: 10px;
+}
+
+div.message {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+span.bannerTitle {
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    font-size: 0.875rem;
+}
+
+span.bannerInfo {
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 0.875rem;
+}
+
+div.banner-spacing {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}

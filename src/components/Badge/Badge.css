@@ -1,0 +1,14 @@
+span.badge {
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    font-size: 0.875rem;
+    padding: 2px 12px;
+    width: fit-content;
+    height: fit-content;
+}
+
+div.badge-spacing {
+    display: flex;
+    margin-bottom: 1rem;
+    gap: 0.5rem;
+}
