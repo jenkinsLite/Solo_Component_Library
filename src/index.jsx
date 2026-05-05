@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import Badge from "./components/Badge/Badge"
 import Banner from "./components/Banner/Banner"
+import Card from "./components/Card/Card"
 
 function App() {
 
@@ -17,6 +18,10 @@ function App() {
 
   const neutralTitle = "Update available"
   const neutralInfo = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid pariatur, ipsum similique veniam."
+
+  // Card Messages
+  const cardTitle = "Easy Deployment"
+  const cardInfo = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid pariatur, ipsum similique veniam."
   
   return (
     <>
@@ -43,10 +48,22 @@ function App() {
       </div>
       
       <div className="banner-spacing">
-        <Banner type="success" title={successTitle} info={successInfo}></Banner>
-        <Banner type="warning" title={warningTitle} info={warningInfo}></Banner>
-        <Banner type="error" title={errorTitle} info={errorInfo}></Banner>
-        <Banner type="neutral" title={neutralTitle} info={neutralInfo}></Banner>
+        <Banner type="success" title={successTitle} info={successInfo} />
+        <Banner type="success" title={successTitle} />
+
+        <Banner type="warning" title={warningTitle} info={warningInfo} />
+        <Banner type="warning" title={warningTitle} />
+
+        <Banner type="error" title={errorTitle} info={errorInfo} />
+        <Banner type="error" title={errorTitle} />
+
+        <Banner type="neutral" title={neutralTitle} info={neutralInfo} />
+        <Banner type="neutral" title={neutralTitle} />
+      </div>
+
+      <div className="card-spacing">
+        <Card title={cardTitle} info={cardInfo} path="/download" fileName={"test.txt"} />
+        <Card title={cardTitle} info={cardInfo} path="/download" fileName={"test.txt"} />
       </div>
 
     </>

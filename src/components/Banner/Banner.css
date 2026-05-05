@@ -28,5 +28,7 @@ span.bannerInfo {
 div.banner-spacing {
     display: flex;
     flex-direction: column;
+    margin: 1rem;
     gap: 1rem;
+    justify-self: center;
 }

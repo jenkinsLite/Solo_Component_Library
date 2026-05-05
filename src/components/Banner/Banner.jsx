@@ -1,5 +1,5 @@
 import "./Banner.css"
-import Icons from "./Icons"
+import Icon from "../Icon/Icon"
 
 export default function Banner({ type="neutral", title="Neutral", info="Lorem ipsum ..." }) {
 
@@ -7,7 +7,7 @@ export default function Banner({ type="neutral", title="Neutral", info="Lorem ip
         success: { bg: "#ECFDF5", title: "#065F46", info: "#047857"},
         warning: { bg: "#FFFBEB", title: "#92400E", info: "#B45309"},
         error: { bg: "#FEF2F2", title: "#92400E", info: "#B45309"},
-        neutral: { bg: "#EFF6FF", title: "#1E40AF", info: "#1C51B9"},
+        neutral: { bg: "#EFF6FF", title: "#1E40AF", info: "#1C51B9"}
     }
 
     const bgStyle = { 
@@ -24,10 +24,10 @@ export default function Banner({ type="neutral", title="Neutral", info="Lorem ip
 
     return (
         <div className="banner" style={bgStyle}>
-            <Icons type={type}/>
+            <Icon type={type}/>
             <div className="message">
                 <span className="bannerTitle" style={titleStyle}>{title}</span>
-                <span className="bannerInfo" style={infoStyle}>{info}</span>
+                {arguments[0].info && <span className="bannerInfo" style={infoStyle}>{info}</span>}
             </div>
         </div>
     )

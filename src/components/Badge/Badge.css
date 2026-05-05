@@ -9,6 +9,7 @@ span.badge {
 
 div.badge-spacing {
     display: flex;
-    margin-bottom: 1rem;
+    margin: 1rem;
     gap: 0.5rem;
+    justify-self: center;
 }
