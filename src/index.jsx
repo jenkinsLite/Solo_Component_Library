@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client';
 import Badge from "./components/Badge/Badge"
 import Banner from "./components/Banner/Banner"
 import Card from "./components/Card/Card"
+import Testimonial from './components/Testimonial/Testimonial';
 
 function App() {
 
@@ -22,6 +23,11 @@ function App() {
   // Card Messages
   const cardTitle = "Easy Deployment"
   const cardInfo = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid pariatur, ipsum similique veniam."
+
+  // Testimonial Messages
+  const testimonialName = "Sue Anon"
+  const testimonialTitle = "Company Inc, Title"
+  const testimonialInfo = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid pariatur, ipsum similique veniam."
   
   return (
     <>
@@ -64,6 +70,10 @@ function App() {
       <div className="card-spacing">
         <Card title={cardTitle} info={cardInfo} path="/download" fileName={"test.txt"} />
         <Card title={cardTitle} info={cardInfo} path="/download" fileName={"test.txt"} />
+      </div>
+
+      <div className="testimonial-spacing">
+        <Testimonial name={testimonialName} title={testimonialTitle} info={testimonialInfo} />
       </div>
 
     </>
