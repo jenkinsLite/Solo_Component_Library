@@ -2,6 +2,7 @@
     --full-width: 1358px;
     --margin-right-left: 3rem;
     --pic-width: 309px;
+    --pic-height: 464px;
     --testimonial-left-margin: calc(var(--margin-right-left) + var(--pic-width) + 1.5rem);
 }
 
@@ -9,7 +10,7 @@ div.testimonial-container {
     display: flex;
     transform: scale(1);
     width: var(--full-width);
-    height: 464px;
+    height: var(--pic-height);
 }
 
 img.pic-container {
@@ -17,7 +18,7 @@ img.pic-container {
     top: 0;
     left: 0;
     width: var(--pic-width);
-    height: 464px;
+    height: var(--pic-height);
     border-radius: 12px;
     margin: 0 var(--margin-right-left);
 }
@@ -70,4 +71,7 @@ div.testimonial-spacing {
     display: flex;
     gap: 1rem;
     justify-self: center;
+}
+
+@media (max-width: 480px) {
 }
