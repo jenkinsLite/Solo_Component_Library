@@ -27,8 +27,8 @@ function App() {
   // Testimonial Messages
   const testimonialName = "Sue Anon"
   const testimonialTitle = "Company Inc, Title"
-  const testimonialInfo = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid pariatur, ipsum similique veniam."
-  
+  const testimonialInfo = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed urna nulla vitae laoreet augue. Amet feugiat est integer dolor auctor adipiscing nunc urna, sit." 
+
   return (
     <>
       <div className="badge-spacing">
@@ -74,7 +74,7 @@ function App() {
 
       <div className="testimonial-spacing">
         <Testimonial name={testimonialName} title={testimonialTitle} info={testimonialInfo} />
-      </div>
+      </div> 
 
     </>
   )

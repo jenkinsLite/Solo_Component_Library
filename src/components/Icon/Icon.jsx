@@ -14,13 +14,14 @@ const icons = {
     quote: { icon: <Quote />, size: 48 }
 }
 
-export default function Icon({ type }) {
+export default function Icon({ type, className="" }) {
 
     const icon = icons[type].icon
     const size = icons[type].size
 
     return (
-        <svg width={size} 
+        <svg className={className} 
+             width={size} 
              height={size} 
              viewBox={`0 0 ${size} ${size}`} 
              fill="none" 
